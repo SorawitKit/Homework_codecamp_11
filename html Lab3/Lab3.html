@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab3</title>
+    <style>
+    th,td{
+        border: 1px solid
+        
+    }
+    th,td{
+        padding: 3px;
+    }
+   
+    </style>
+</head>
+<body>
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi">
+    <table style="border: 1px solid; width: 40%;">
+        <tr>
+            <th colspan="3">Pizza Shop 2.0</th>
+        </tr>
+        <tr>
+            <td style="width: 30%;">Name</td>
+            <td colspan="2"><input type="text" name="name"></td>
+        </tr>
+        <tr>
+            <td rowspan="3">Pizza Topping</td>
+            <td colspan="2" >
+                <input type="radio" name="topping" value="Supreme">Supreme <br>
+                <input type="radio" name="topping" value="Vegetarian">Vegetarian <br>
+                <input type="radio" name="topping" value="Hawaiian">Hawaiian
+            </td>
+        </tr>
+        <tr></tr> 
+        <tr></tr>
+        <tr>
+            <td>Pizza Sauce</td>
+            <td colspan="2">
+                <select name="sauce">
+                    <option value="tomato">tomato</option>
+                    <option value="barbeque">barbeque</option>
+                    <option value="mayonniase">mayonniase</option>
+                    <option value="secret">secret</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Optional Extras</td>
+            <td>
+                <input type="checkbox" name="extra_cheese" value="1">Extra Cheese
+                <input type="checkbox" name="gluten_free" value="1">Gluten Cheese
+            </td>
+            
+        </tr>
+        <tr>
+            <td>Delivery Instrunctions:</td>
+            <td colspan="2">
+                <textarea name="delivery" cols="50" rows="4"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="Send my Order">
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

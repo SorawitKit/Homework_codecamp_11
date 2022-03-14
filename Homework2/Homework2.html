@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <style>
+        fieldset{
+            width: 350px;
+        }
+        th,td{
+            padding: 5px;
+        }
+        th{
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi">
+    <fieldset>
+    <table>
+        <tr>
+            <th colspan="2">Flying from</th>
+            <th colspan="2">To</th>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <select name="Country">
+                <option value="Thailand">Bangkok, Thailand</option>
+                <option value="Japan">Tokyo, Japan</option>
+                <option value="America">Washington,DC, America</option>
+                <option value="French">Paris, French</option>
+                </select>
+            </td>
+            <td colspan="2">
+                <select name="Country">
+                    <option value="Thailand">Bangkok, Thailand</option>
+                    <option value="Japan">Tokyo, Japan</option>
+                    <option value="America">Washington,DC, America</option>
+                    <option value="French">Paris, French</option>
+                    </select>
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2">Departing</th>
+            <th colspan="2">Returning</th>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <label for="Departing" ></label>
+                <input type="date" id="Departing" name="Departing">
+            </td>
+            <td colspan="2"> 
+                <label for="Returning"></label>
+                <input type="date" id="Returning" name="Returning">
+            </td>
+        </tr>
+        <tr>
+            <th>Adult</th>
+            <th>Child</th>
+            <th>Infant</th>
+            <th>Currency</th>
+        </tr>
+        <tr>
+            <td>
+                <label for="Adult"></label>
+                <input type="number" id="Adult" name="Adult" min="0" max="20">
+            </td>
+            <td>
+                <label for="Child"></label>
+                <input type="number" id="Child" name="Child" min="0" max="20">
+            </td>
+            <td>
+                <label for="Infant"></label>
+                <input type="number" id="Infant" name="Infant" min="0" max="20">
+            </td>
+            <td>
+                <select name="Currency" id="Currency">
+                    <option value="THB">THB</option>
+                    <option value="YEN">YEN</option>
+                    <option value="USD">USD</option>
+                    <option value="EURO">EURO</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Search" style="background-color: #ff5e00; color: white; border-radius: 5px; width: 75px; height: 35px;" ></td>
+        </tr>
+    </table>
+    </fieldset>
+    </form>
+</body>
+</html>
+            
